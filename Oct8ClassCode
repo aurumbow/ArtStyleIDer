@@ -1,0 +1,49 @@
+let video;
+let classifier = ml5.KNNClassifier();
+//classifier.load('assets/emptyknn.json');
+let posenet; 
+let surprise, notsurprise;
+let savebutton, loadbutton; 
+
+let thing = ml5.featureExtractor('PitchDetection');
+console.log(thing);
+
+
+let thepose;
+
+function setup() {
+  createCanvas(400, 400);
+  video = createCapture();
+  video.hide();
+  posenet = ml5.poseNet(video, function(){
+    console.log("posenet has loaded");
+  }); 
+
+  posenet.on('pose', function(data){
+    /// stolen/borrowed/inspired by from this example
+    // https://github.com/ml5js/ml5-examples/blob/development/p5js/KNNClassification/KNNClassification_PoseNet/sketch.js
+      //const poseArray = poses[0].pose.keypoints.map(p => [p.score, p.position.x, p.position.y]);
+
+    thepose = data[0].pose.keypoints.map(p => [p.score, p.position.x, p.position.y]);
+    //console.log(data);
+    //classifer.addExample(data, 'SURPRISE!')
+  });
+  
+  surprise = createButton('Surprise!');
+  notsurprise = createButton('Not Surprise');
+  surprise.mousePressed(function(){
+    classifier.addExample(thepose, 'Surprise');
+  });
+  
+  savebutton = createButton("Save Classifier");
+  savebutton.mousePressed(function(){
+    classifier.save('realknn.json');
+  });
+
+}
+
+
+function draw() {
+  background(220);
+  image(video, 0, 0, width, height);
+}
