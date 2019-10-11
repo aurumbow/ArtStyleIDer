@@ -19,6 +19,7 @@ function setup() {
 
 function draw() {
 //wait for user input
+//i dont know how to get a user to input an image
 
 //read the user input and classify it
 
