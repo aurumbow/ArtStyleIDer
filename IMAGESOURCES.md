@@ -31,3 +31,19 @@ https://en.wikipedia.org/wiki/Realism_(art_movement)
 10 - Jules Bastien-Lepage "October" (1878)
 11 - Ivan Shishkin - Rye (1878)
 12 - Adolph Menzel "Rear of House and Backyard" (ca. 1846)
+
+Impressionism Sources
+https://en.wikipedia.org/wiki/Impressionism
+1 -  Camille Pissarro "Boulevard Montmartre" (1897)
+2 - Claude Monet "Woman with a Parasol - Madame Monet and Her Son (Camille and Jean Monet)" (1875)
+3 - Pierre-Auguste Renoir "Dance at Le Moulin de la Galette (Bal du moulin de la Galette)" (1876)
+4 - Claude Monet "Impression, soleil levant (Impression, Sunrise)" (1872)
+5 - Mary Cassatt "Lydia Leaning on Her Arms (in a theatre box)" (1879)
+6 - Camille Pissarro "Hay Harvest at Éragny" (1901)
+7 - Pierre-Auguste Renoir "On the Terrace" (1881)
+8 - Armand Guillaumin "Sunset at Ivry (Soleil couchant à Ivry)" (1873)
+9 - Pierre-Auguste Renoir "Portrait of Mademoiselle Irène Cahen d'Anvers (La Petite Irène)" (1880)
+10 - Edgar Degas "Dancer with a Bouquet of Flowers (Star of the Ballet)" (1878)
+11 - 
+Gustave Caillebotte "Paris Street; Rainy 
+12 - Alfred Sisley "Bridge at Villeneuve-la-Garenne" (1872)
