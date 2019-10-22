@@ -1,6 +1,6 @@
 //set up the variables that are needed everywhere
 let userImage;
-let classifier = ml5.KNNClassifier();
+const knnClassifier = ml5.KNNClassifier();
 let category1, category2; //we can maybe add more categories
 let loadButton, goButton;
 
@@ -8,11 +8,14 @@ let loadButton, goButton;
 //initalize classifier and related variables (like buttons!)
 function setup() {
   createCanvas(400, 400);
+  //setup for user input 
+  input = createFileInput(handleFile);
+  input.position(0, 0);
   //button that loads the knn archive
   loadbutton = createButton("Ready Program");
   loadButton.mousePressed(function(){
     //load in the teaching examples to the classifier
-    //we'll need to order and name them a specific way, so we can use for loops more easily to do it.
+    //we'll need to order and name them a specific way, so we can use for loops more easily to do the loading
   });
 }
 
@@ -20,9 +23,21 @@ function setup() {
 function draw() {
 //wait for user input
 //i dont know how to get a user to input an image. we'll need to look it up
-
+if (img) {
+    image(img, 0, 0, width, height);
+  }
 //read the user input and classify it
 
 //print result
   background(220);
+}
+
+function handleFile(file) {
+  print(file);
+  if (file.type === 'image') {
+    img = createImg(file.data, '');
+    img.hide();
+  } else {
+    img = null;
+  }
 }
