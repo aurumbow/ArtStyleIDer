@@ -80,12 +80,6 @@ function setup(){
 //telling computer 'whats in here (impressionism[i])' is impressionism'
   classifier.addExample( impressionism[i], 'Impressionism');
     }
-
-//add a for loop
-//telling computer 'whats in here (realism[i]' is realism'
-classifier.addExample( realism[i], 'Realism');
-//telling computer 'whats in here (impressionism[i]' is impressionism'
-classifier.addExample( impressionism[i], 'Impressionism');
 }
 
 //doing things is fun and cool
