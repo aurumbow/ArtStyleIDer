@@ -37,7 +37,6 @@ function setup(){
                 createImg('assets/cubism/10.jpg'),
                 createImg('assets/cubism/11.jpg'),
                 createImg('assets/cubism/12.jpg'),
-                createImg('assets/cubism/13.jpg'),]
 
   var realism = [createImg('assets/realism/1.jpg'),
                 createImg('assets/realism/2.jpg'),
@@ -51,7 +50,6 @@ function setup(){
                 createImg('assets/realism/10.jpg'),
                 createImg('assets/realism/11.jpg'),
                 createImg('assets/realism/12.jpg'),
-                createImg('assets/realism/13.jpg'),]
 
   var impressionism = [createImg('assets/impressionism/1.jpg'),
                 createImg('assets/impressionism/2.jpg'),
@@ -65,9 +63,8 @@ function setup(){
                 createImg('assets/impressionism/10.jpg'),
                 createImg('assets/impressionism/11.jpg'),
                 createImg('assets/impressionism/12.jpg'),
-                createImg('assets/impressionism/13.jpg'),]
 
-  for (var i = 0; i < cubism.length, i++)
+  for (var i = 0; i < cubism.length, i++){
   //since ALL the classifiers are being done in the same loop
   //each category MUST have same number of images
     {
